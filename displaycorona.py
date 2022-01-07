@@ -1,13 +1,12 @@
 import time
-import getcorona
 import turtle
 
 
-def display_one():
+def display_one():  # Display 1 on the screen
     turtle.forward(100)
 
 
-def display_two():
+def display_two():  # Display 2 on the screen
     turtle.left(90)
     turtle.forward(50)
     turtle.right(90)
@@ -20,7 +19,7 @@ def display_two():
     turtle.forward(50)
 
 
-def display_three():
+def display_three():  # Display 3 on the screen
     turtle.left(90)
     turtle.forward(50)
     turtle.back(50)
@@ -37,7 +36,7 @@ def display_three():
     turtle.right(90)
 
 
-def display_four():
+def display_four():  # Display 4 on the screen
     turtle.forward(50)
     turtle.left(90)
     turtle.forward(50)
@@ -50,7 +49,7 @@ def display_four():
     turtle.forward(50)
 
 
-def display_five():
+def display_five():  # Display 5 on the screen
     turtle.left(90)
     turtle.forward(50)
     turtle.back(50)
@@ -64,7 +63,7 @@ def display_five():
     turtle.forward(50)
 
 
-def display_six():
+def display_six():  # Display 6 on the screen
     turtle.left(90)
     turtle.forward(50)
     turtle.back(50)
@@ -82,13 +81,13 @@ def display_six():
     turtle.forward(50)
 
 
-def display_seven():
+def display_seven():  # Display 7 on the screen
     turtle.forward(100)
     turtle.left(90)
     turtle.forward(50)
     
 
-def display_eight():
+def display_eight():  # Display 8 on the screen
     turtle.left(90)
     turtle.forward(50)
     turtle.back(50)
@@ -108,7 +107,7 @@ def display_eight():
     turtle.forward(50)
 
 
-def display_nine():
+def display_nine():  # Display 9 on the screen
     turtle.forward(100)
     turtle.left(90)
     turtle.forward(50)
@@ -118,47 +117,75 @@ def display_nine():
     turtle.forward(50)
 
 
-turtle.left(90)
-display_one()
-time.sleep(1)
-turtle.home()
-turtle.reset()
-turtle.clear()
-time.sleep(3)
-turtle.left(90)
-display_two()
-turtle.clear()
-turtle.home()
-turtle.reset()
-turtle.left(90)
-display_three()
-turtle.clear()
-turtle.home()
-turtle.reset()
-turtle.left(90)
-display_four()
-turtle.clear()
-turtle.home()
-turtle.reset()
-turtle.left(90)
-display_five()
-turtle.clear()
-turtle.home()
-turtle.reset()
-turtle.left(90)
-display_six()
-turtle.clear()
-turtle.home()
-turtle.reset()
-turtle.left(90)
-display_seven()
-turtle.clear()
-turtle.home()
-turtle.reset()
-turtle.left(90)
-display_eight()
-turtle.clear()
-turtle.home()
-turtle.reset()
-turtle.left(90)
-display_nine()
+def display_zero():  # Display 0 on the screen
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.back(50)
+    turtle.right(90)
+    turtle.forward(50)
+    turtle.left(90)
+    turtle.penup()
+    turtle.forward(50)
+    turtle.pendown()
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.back(50)
+    turtle.right(90)
+    turtle.right(90)
+    turtle.forward(50)
+    turtle.right(90)
+    turtle.forward(50)
+    turtle.right(90)
+    turtle.forward(50)
+
+
+def testing():  # Testing function
+    turtle.left(90)
+    display_one()
+    time.sleep(1)
+    turtle.home()
+    turtle.reset()
+    turtle.clear()
+    time.sleep(3)
+    turtle.left(90)
+    display_two()
+    turtle.clear()
+    turtle.home()
+    turtle.reset()
+    turtle.left(90)
+    display_three()
+    turtle.clear()
+    turtle.home()
+    turtle.reset()
+    turtle.left(90)
+    display_four()
+    turtle.clear()
+    turtle.home()
+    turtle.reset()
+    turtle.left(90)
+    display_five()
+    turtle.clear()
+    turtle.home()
+    turtle.reset()
+    turtle.left(90)
+    display_six()
+    turtle.clear()
+    turtle.home()
+    turtle.reset()
+    turtle.left(90)
+    display_seven()
+    turtle.clear()
+    turtle.home()
+    turtle.reset()
+    turtle.left(90)
+    display_eight()
+    turtle.clear()
+    turtle.home()
+    turtle.reset()
+    turtle.left(90)
+    display_nine()
+    turtle.clear()
+    turtle.home()
+    turtle.reset()
+    turtle.left(90)
+    display_zero()
