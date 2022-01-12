@@ -1,191 +1,55 @@
 import time
 import turtle
+import getcorona
+import displaycoronanumbers
 
 
-def display_one():  # Display 1 on the screen
-    turtle.forward(100)
-
-
-def display_two():  # Display 2 on the screen
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.right(90)
-    turtle.forward(50)
-    turtle.right(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-
-
-def display_three():  # Display 3 on the screen
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.back(50)
-    turtle.right(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.back(50)
-    turtle.right(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.back(50)
-    turtle.right(90)
-
-
-def display_four():  # Display 4 on the screen
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.right(90)
-    turtle.forward(50)
-    turtle.back(50)
-    turtle.left(90)
-    turtle.back(50)
-    turtle.right(90)
-    turtle.forward(50)
-
-
-def display_five():  # Display 5 on the screen
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.back(50)
-    turtle.right(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.right(90)
-    turtle.forward(50)
-    turtle.right(90)
-    turtle.forward(50)
-
-
-def display_six():  # Display 6 on the screen
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.back(50)
-    turtle.right(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.back(50)
-    turtle.right(90)
-    turtle.right(90)
-    turtle.forward(50)
-    turtle.right(90)
-    turtle.forward(50)
-
-
-def display_seven():  # Display 7 on the screen
-    turtle.forward(100)
-    turtle.left(90)
-    turtle.forward(50)
-    
-
-def display_eight():  # Display 8 on the screen
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.back(50)
-    turtle.right(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.back(50)
-    turtle.right(90)
-    turtle.right(90)
-    turtle.forward(50)
-    turtle.right(90)
-    turtle.forward(50)
-    turtle.right(90)
-    turtle.forward(50)
-
-
-def display_nine():  # Display 9 on the screen
-    turtle.forward(100)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-
-
-def display_zero():  # Display 0 on the screen
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.back(50)
-    turtle.right(90)
-    turtle.forward(50)
-    turtle.left(90)
+def runner(x,y):
+    counter = 0
     turtle.penup()
-    turtle.forward(50)
-    turtle.pendown()
+    turtle.goto(x, y)
     turtle.left(90)
-    turtle.forward(50)
-    turtle.back(50)
-    turtle.right(90)
-    turtle.right(90)
-    turtle.forward(50)
-    turtle.right(90)
-    turtle.forward(50)
-    turtle.right(90)
-    turtle.forward(50)
+    #  corona = getcorona.getcovid()
+    corona = 5678  # Offline :/
+    corona_string = str(corona)
+    for i in corona_string:
+        counter = counter + 1
+        if i == "1":
+            turtle.pendown()
+            displaycoronanumbers.display_one()
+        elif i == "2":
+            turtle.pendown()
+            displaycoronanumbers.display_two()
+        elif i == "3":
+            turtle.pendown()
+            displaycoronanumbers.display_three()
+        elif i == "4":
+            turtle.pendown()
+            displaycoronanumbers.display_four()
+        elif i == "5":
+            turtle.pendown()
+            displaycoronanumbers.display_five()
+        elif i == "6":
+            turtle.pendown()
+            displaycoronanumbers.display_six()
+        elif i == "7":
+            turtle.pendown()
+            displaycoronanumbers.display_seven()
+        elif i == "8":
+            turtle.pendown()
+            displaycoronanumbers.display_eight()
+        elif i == "9":
+            turtle.pendown()
+            displaycoronanumbers.display_nine()
+        elif i == "0":
+            turtle.pendown()
+            displaycoronanumbers.display_zero()
+        turtle.penup()
+        turtle.goto(x, y)
+        turtle.penup()
+        turtle.forward(counter * 100)
+        turtle.left(90)
+        time.sleep(1)
 
 
-def testing():  # Testing function
-    turtle.left(90)
-    display_one()
-    time.sleep(1)
-    turtle.home()
-    turtle.reset()
-    turtle.clear()
-    time.sleep(3)
-    turtle.left(90)
-    display_two()
-    turtle.clear()
-    turtle.home()
-    turtle.reset()
-    turtle.left(90)
-    display_three()
-    turtle.clear()
-    turtle.home()
-    turtle.reset()
-    turtle.left(90)
-    display_four()
-    turtle.clear()
-    turtle.home()
-    turtle.reset()
-    turtle.left(90)
-    display_five()
-    turtle.clear()
-    turtle.home()
-    turtle.reset()
-    turtle.left(90)
-    display_six()
-    turtle.clear()
-    turtle.home()
-    turtle.reset()
-    turtle.left(90)
-    display_seven()
-    turtle.clear()
-    turtle.home()
-    turtle.reset()
-    turtle.left(90)
-    display_eight()
-    turtle.clear()
-    turtle.home()
-    turtle.reset()
-    turtle.left(90)
-    display_nine()
-    turtle.clear()
-    turtle.home()
-    turtle.reset()
-    turtle.left(90)
-    display_zero()
+runner(50, 50)
