@@ -48,3 +48,6 @@ def runner(x, y):  # Draws the runner on the screen
         turtle.penup()  # Pulls the pen up
         turtle.forward(counter * 100)  # Moves the turtle forward
         turtle.left(90)  # Turns the turtle to the left
+
+
+runner(-200, -200)
