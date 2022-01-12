@@ -1,10 +1,10 @@
 import time
 import turtle
-import getcorona
+
 import displaycoronanumbers
 
 
-def runner(x,y):
+def runner(x, y):
     counter = 0
     turtle.penup()
     turtle.goto(x, y)
