@@ -2,6 +2,7 @@ import time
 import turtle
 
 import displaycoronanumbers
+import getcorona
 
 
 def runner(x, y):
@@ -9,8 +10,7 @@ def runner(x, y):
     turtle.penup()
     turtle.goto(x, y)
     turtle.left(90)
-    #  corona = getcorona.getcovid()
-    corona = 5678  # Offline :/
+    corona = getcorona.getcovid()
     corona_string = str(corona)
     for i in corona_string:
         counter = counter + 1
