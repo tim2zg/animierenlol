@@ -1,8 +1,84 @@
 import turtle
 
 
-def krankenhaus():
-    pass
+def krankenhaus():  # Draws a Krankenhaus
+    turtle.left(90)
+    turtle.color("black")
+
+    turtle.forward(200)
+    turtle.left(90)
+    turtle.forward(150)
+    turtle.left(90)
+    turtle.forward(200)
+    turtle.left(90)
+    turtle.forward(150)
+    turtle.backward(110)
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.right(90)
+    turtle.fd(70)
+    turtle.rt(90)
+    turtle.fd(50)
+    turtle.left(180)
+    turtle.fd(50)
+    for i in range(3):
+        turtle.pu()
+        turtle.fd(20)  # abstand der Fenster
+        turtle.pd()
+        turtle.fd(20)
+        turtle.lt(90)
+        turtle.fd(20)
+        turtle.lt(90)
+        turtle.fd(20)
+        turtle.lt(90)
+        turtle.fd(20)
+        turtle.lt(90)
+        turtle.fd(20)
+    turtle.pu()
+    turtle.left(90)
+    turtle.fd(70)
+    turtle.left(90)
+    turtle.pd()
+    for i in range(3):
+        turtle.fd(20)
+        turtle.lt(90)
+        turtle.fd(20)
+        turtle.lt(90)
+        turtle.fd(20)
+        turtle.lt(90)
+        turtle.fd(20)
+        turtle.lt(90)
+        turtle.fd(20)
+        turtle.pu()
+        turtle.fd(20)  # abstand der Fenster
+        turtle.pd()
+
+    turtle.pu()  # tafel mit rotem Kreuz
+    turtle.lt(180)
+    turtle.fd(150)
+    turtle.pd()
+    turtle.fd(50)
+    turtle.rt(90)
+    turtle.fd(80)
+    turtle.rt(90)
+    turtle.fd(50)
+    turtle.rt(90)
+    turtle.fd(20)
+    turtle.rt(90)
+    turtle.pu()
+    turtle.fd(20)
+    turtle.pd()
+    turtle.begin_fill()
+    for i in range(4):
+        turtle.fd(12.5)
+        turtle.lt(90)
+        turtle.fd(13)
+        turtle.rt(90)
+        turtle.fd(13)
+        turtle.lt(90)
+
+    turtle.fillcolor("red")
+    turtle.end_fill()
 
 
 krankenhaus()
