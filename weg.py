@@ -47,6 +47,3 @@ def weg():
     turtle.fd(187)
     turtle.left(90)
     turtle.fd(140)
-
-
-weg()

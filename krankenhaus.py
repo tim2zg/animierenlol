@@ -4,7 +4,6 @@ import turtle
 def krankenhaus():  # Draws a Krankenhaus
     turtle.left(90)
     turtle.color("black")
-
     turtle.forward(200)
     turtle.left(90)
     turtle.forward(150)
@@ -76,6 +75,5 @@ def krankenhaus():  # Draws a Krankenhaus
         turtle.rt(90)
         turtle.fd(13)
         turtle.lt(90)
-
     turtle.fillcolor("red")
     turtle.end_fill()
