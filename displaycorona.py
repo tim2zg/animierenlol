@@ -46,7 +46,7 @@ def runner(x, y, size):  # Draws the runner on the screen
         turtle.penup()  # Pulls the pen up
         turtle.goto(x, y)  # Moves the turtle to the starting position
         turtle.penup()  # Pulls the pen up
-        turtle.forward(counter * 100)  # Moves the turtle forward
+        turtle.forward(counter * 10 * size)  # Moves the turtle forward
         turtle.left(90)  # Turns the turtle to the left
 
 runner(0, 0, 5)  # Runs the runner function
