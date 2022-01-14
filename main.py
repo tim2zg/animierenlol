@@ -31,7 +31,7 @@ def runner():
                 krankenhaus.krankenhaus()
                 turtle.penup()
                 turtle.home()
-                turtle.goto(i + -370, 120)
+                turtle.goto(i + -370, 115)
                 turtle.pendown()
                 krankenwagen.krankenwagen()
                 # Update the screen to see the changes
