@@ -5,15 +5,12 @@ import displaycorona
 import krankenhaus
 import krankenwagen
 import weg
+import write
 
 run = True
 wn = turtle.Screen()
-
 wn.tracer(0)
-
 turtle.speed(0)
-
-krankenwagenpositions = [[-370, 120], [-380, 120], [-390, 120], [-400, 120], [-350, 120], [0, 200], [-200, 200], [-200, 0]]
 
 
 def runner():
@@ -148,13 +145,13 @@ def runner():
                 # Update the screen to see the changes
                 wn.update()
 
-        time.sleep(1)
         turtle.penup()
         turtle.home()
         turtle.pendown()
-        displaycorona.runner(-260, -260, 5)
+        displaycorona.runner(-260, -210, 5)
+        write.draw_text("Corona Zahlen:", -260, -150)
         wn.update()
-        time.sleep(1)
+        time.sleep(2)
 
 
 runner()
