@@ -8,12 +8,17 @@ run = True
 krankenwagenpositions = []
 
 
+def yooo():
+    print(turtle.pos())
+
+
 def runner():
     while run:
-        for i in krankenwagenpositions:
-            weg.weg()
-            turtle.goto(i[0], i[1])
-            krankenwagen.krankenwagen()
+        pass
 
 
-runner()
+for i in krankenwagenpositions:
+    turtle.hideturtle()
+    weg.weg()
+    turtle.goto(i[0], i[1])
+    krankenwagen.krankenwagen()

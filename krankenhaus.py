@@ -79,6 +79,3 @@ def krankenhaus():  # Draws a Krankenhaus
 
     turtle.fillcolor("red")
     turtle.end_fill()
-
-
-krankenhaus()
