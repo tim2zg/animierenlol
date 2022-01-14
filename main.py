@@ -1,14 +1,14 @@
+import time
 import turtle
 
+import displaycorona
 import krankenhaus
-import weg
 import krankenwagen
-import time
+import weg
 
 run = True
 wn = turtle.Screen()
 
-# This turns off screen updates
 wn.tracer(0)
 
 turtle.speed(0)
@@ -26,7 +26,7 @@ def runner():
                 weg.weg()
                 turtle.penup()
                 turtle.left(180)
-                turtle.goto(360, -160)
+                turtle.goto(360, -155)
                 turtle.pendown()
                 krankenhaus.krankenhaus()
                 turtle.penup()
@@ -44,7 +44,7 @@ def runner():
                 weg.weg()
                 turtle.penup()
                 turtle.left(180)
-                turtle.goto(360, -160)
+                turtle.goto(360, -155)
                 turtle.pendown()
                 krankenhaus.krankenhaus()
                 turtle.penup()
@@ -68,7 +68,7 @@ def runner():
                 krankenhaus.krankenhaus()
                 turtle.penup()
                 turtle.home()
-                turtle.goto(i + -220, -75)
+                turtle.goto(i + -220, -70)
                 turtle.pendown()
                 krankenwagen.krankenwagen()
                 # Update the screen to see the changes
@@ -81,22 +81,81 @@ def runner():
                 weg.weg()
                 turtle.penup()
                 turtle.left(180)
-                turtle.goto(360, -160)
+                turtle.goto(360, -155)
                 turtle.pendown()
                 krankenhaus.krankenhaus()
                 turtle.penup()
                 turtle.home()
-                turtle.goto(-220, 120 - i)
+                turtle.goto(115, -75 + i)
+                turtle.left(90)
+                turtle.pendown()
+                krankenwagen.krankenwagen()
+                # Update the screen to see the changes
+                wn.update()
+
+        for i in range(30):
+                turtle.reset()
+                turtle.clear()
+                turtle.hideturtle()
+                weg.weg()
+                turtle.penup()
+                turtle.left(180)
+                turtle.goto(360, -155)
+                turtle.pendown()
+                krankenhaus.krankenhaus()
+                turtle.penup()
+                turtle.home()
+                turtle.goto(80 + i, 75)
+                turtle.pendown()
+                krankenwagen.krankenwagen()
+                # Update the screen to see the changes
+                wn.update()
+
+        for i in range(200):
+                turtle.reset()
+                turtle.clear()
+                turtle.hideturtle()
+                weg.weg()
+                turtle.penup()
+                turtle.left(180)
+                turtle.goto(360, -155)
+                turtle.pendown()
+                krankenhaus.krankenhaus()
+                turtle.penup()
+                turtle.home()
+                turtle.goto(140, 70 - i)
                 turtle.pendown()
                 turtle.right(90)
                 krankenwagen.krankenwagen()
                 # Update the screen to see the changes
                 wn.update()
 
+        for i in range(80):
+                turtle.reset()
+                turtle.clear()
+                turtle.hideturtle()
+                weg.weg()
+                turtle.penup()
+                turtle.left(180)
+                turtle.goto(360, -155)
+                turtle.pendown()
+                krankenhaus.krankenhaus()
+                turtle.penup()
+                turtle.home()
+                turtle.goto(140 + i, -223)
+                turtle.pendown()
+                krankenwagen.krankenwagen()
+                # Update the screen to see the changes
+                wn.update()
+
+        time.sleep(1)
+        turtle.penup()
+        turtle.home()
+        turtle.pendown()
+        displaycorona.runner(-260, -260, 5)
+        wn.update()
+        time.sleep(1)
+
 
 runner()
-
-
-
-
 wn.mainloop()
